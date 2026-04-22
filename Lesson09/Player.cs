@@ -1,9 +1,5 @@
-using System.Collections;
-using System.Diagnostics;
-using System.Runtime.CompilerServices;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Content;
 
 namespace Lesson09;
 
@@ -14,7 +10,7 @@ public class Player
     private Rectangle _gameBoundingBox = new Rectangle(0, 0, WindowWidth, WindowHeight);
 
     private Player _player;
-    private const int _Speed = 150;
+    private const int _Speed = 150, _JumpVelocity = -130;
     private enum State
     {
         Idle,
@@ -27,8 +23,10 @@ public class Player
     private SimpleAnimation _animationIdle, _animationJump, _animationWalk, _animationCurrent;
 
     private Vector2 _position, _velocity, _dimensions;
-    
+
     private Rectangle _gameBoundingBox;
+
+    internal Vector2 Velocity { get => _velocity; }
 
     internal Rectangle BoundingBox
     {
@@ -39,7 +37,7 @@ public class Player
     {
         _position = position;
         _gameBoundingBox = gameBoundingBox;
-        _dimensions = new Vector2(46, 40);
+        _dimensions = new Vector2(35, 34);
     }
 
     internal void Initialize()
@@ -82,10 +80,19 @@ public class Player
     internal void Update(GameTime gameTime)
     {
         float dt = (float)gameTime.ElapsedGameTime.TotalSeconds;
-        _animationCurrent.Update(gameTime);
 
-        _velocity.Y += PlatformerGame.Gravity * dt;
-         _position += _velocity * dt;
+        _animationCurrent?.Update(gameTime);
+
+        _velocity.Y += PlatformerGame._Gravity * dt;
+
+        _position += _velocity * dt;
+         
+         if(Math.Abs(_velocity.Y) > Platformer._Gravity * dt)
+         {
+            _state = State.Jumping;
+            _animationCurrent = _animationJump;
+            _animationCurrent.Reset();
+         }
 
         switch(_state)
         {
@@ -119,16 +126,28 @@ public class Player
     internal void MoveHorizontally(float direction)
     {
         bool originalFacingRight = _facingRight;
+
         _velocity.X = direction * _Speed;
-        
-        _facingRightRight = _velocity.X >0;
-        if(_state == State.Idle)
+
+        if (_velocity.X != 0)
+            _facingRight = _velocity.X > 0;
+
+        if (_state == State.Idle)
         {
             _animationCurrent = _animationWalk;
             _state = State.Walking;
         }
-    }
 
+        if (originalFacingRight != _facingRight)
+        {
+            _animationCurrent?.Reset();
+        }
+    }
+    
+    internal void MoveVertically(float direction)
+    {
+        _velocity.Y = direction * _Speed;
+    }
 
     internal void Stop()
     {
@@ -143,11 +162,36 @@ public class Player
 
     internal void Jump()
     {
-        if(_state != State.Jumping)
+        if (_state != State.Jumping)
         {
             _velocity.Y = -350;
             _animationCurrent = _animationJump;
             _state = State.Jumping;
+        }
+    }
+
+    internal void Land()
+    {
+        if (_state == State.Jumping)
+        {
+            _position.Y = whatIlandedOn.Top - _dimensions.Y + 1;
+            _velocity.Y = 0;
+            _state = State.Walking;
+        }
+    }
+
+    internal void StandOn(Rectangle whatiAmStandingOn, float dt)
+    {
+        _velocity.Y -= PlatformerGame.Gravity * dt;
+        _position.Y = whatiAmStandingOn.Top - _dimensions.Y + 1;
+
+    }
+
+    internal void Jump()
+    {
+        if (_state != State.Jumping)
+        {
+            _velocity.Y = _JumpVelocity;
         }
     }
 }

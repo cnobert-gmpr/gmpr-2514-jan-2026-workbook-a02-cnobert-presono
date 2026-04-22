@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\School\\Win26\\GMPR 2514\\workbook 2514\\Lesson03Loops\\Lesson03Loops.csproj": {}
+    "C:\\School\\GMPR 2514\\gmpr-2514-jan-2026-workbook-a02-cnobert-presono\\Lesson03Loops\\Lesson03Loops.csproj": {}
   },
   "projects": {
-    "C:\\School\\Win26\\GMPR 2514\\workbook 2514\\Lesson03Loops\\Lesson03Loops.csproj": {
+    "C:\\School\\GMPR 2514\\gmpr-2514-jan-2026-workbook-a02-cnobert-presono\\Lesson03Loops\\Lesson03Loops.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\School\\Win26\\GMPR 2514\\workbook 2514\\Lesson03Loops\\Lesson03Loops.csproj",
+        "projectUniqueName": "C:\\School\\GMPR 2514\\gmpr-2514-jan-2026-workbook-a02-cnobert-presono\\Lesson03Loops\\Lesson03Loops.csproj",
         "projectName": "Lesson03Loops",
-        "projectPath": "C:\\School\\Win26\\GMPR 2514\\workbook 2514\\Lesson03Loops\\Lesson03Loops.csproj",
-        "packagesPath": "C:\\Users\\jhuri\\.nuget\\packages\\",
-        "outputPath": "C:\\School\\Win26\\GMPR 2514\\workbook 2514\\Lesson03Loops\\obj\\",
+        "projectPath": "C:\\School\\GMPR 2514\\gmpr-2514-jan-2026-workbook-a02-cnobert-presono\\Lesson03Loops\\Lesson03Loops.csproj",
+        "packagesPath": "C:\\Users\\presono\\.nuget\\packages\\",
+        "outputPath": "C:\\School\\GMPR 2514\\gmpr-2514-jan-2026-workbook-a02-cnobert-presono\\Lesson03Loops\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jhuri\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\presono\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"

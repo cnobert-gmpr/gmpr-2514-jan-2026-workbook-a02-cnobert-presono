@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\School\\Win26\\GMPR 2514\\workbook 2514\\Lesson07Pong\\Lesson07Pong.csproj": {}
+    "C:\\School\\GMPR 2514\\gmpr-2514-jan-2026-workbook-a02-cnobert-presono\\Lesson07Pong\\Lesson07Pong.csproj": {}
   },
   "projects": {
-    "C:\\School\\Win26\\GMPR 2514\\workbook 2514\\Lesson07Pong\\Lesson07Pong.csproj": {
+    "C:\\School\\GMPR 2514\\gmpr-2514-jan-2026-workbook-a02-cnobert-presono\\Lesson07Pong\\Lesson07Pong.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\School\\Win26\\GMPR 2514\\workbook 2514\\Lesson07Pong\\Lesson07Pong.csproj",
+        "projectUniqueName": "C:\\School\\GMPR 2514\\gmpr-2514-jan-2026-workbook-a02-cnobert-presono\\Lesson07Pong\\Lesson07Pong.csproj",
         "projectName": "Lesson07Pong",
-        "projectPath": "C:\\School\\Win26\\GMPR 2514\\workbook 2514\\Lesson07Pong\\Lesson07Pong.csproj",
-        "packagesPath": "C:\\Users\\jhuri\\.nuget\\packages\\",
-        "outputPath": "C:\\School\\Win26\\GMPR 2514\\workbook 2514\\Lesson07Pong\\obj\\",
+        "projectPath": "C:\\School\\GMPR 2514\\gmpr-2514-jan-2026-workbook-a02-cnobert-presono\\Lesson07Pong\\Lesson07Pong.csproj",
+        "packagesPath": "C:\\Users\\presono\\.nuget\\packages\\",
+        "outputPath": "C:\\School\\GMPR 2514\\gmpr-2514-jan-2026-workbook-a02-cnobert-presono\\Lesson07Pong\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jhuri\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\presono\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"

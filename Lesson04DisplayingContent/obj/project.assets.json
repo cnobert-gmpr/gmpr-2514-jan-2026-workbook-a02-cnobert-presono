@@ -496,19 +496,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jhuri\\.nuget\\packages\\": {}
+    "C:\\Users\\presono\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\School\\Win26\\GMPR 2514\\workbook 2514\\Lesson04DisplayingContent\\Lesson04DisplayingContent.csproj",
+      "projectUniqueName": "C:\\School\\GMPR 2514\\gmpr-2514-jan-2026-workbook-a02-cnobert-presono\\Lesson04DisplayingContent\\Lesson04DisplayingContent.csproj",
       "projectName": "Lesson04DisplayingContent",
-      "projectPath": "C:\\School\\Win26\\GMPR 2514\\workbook 2514\\Lesson04DisplayingContent\\Lesson04DisplayingContent.csproj",
-      "packagesPath": "C:\\Users\\jhuri\\.nuget\\packages\\",
-      "outputPath": "C:\\School\\Win26\\GMPR 2514\\workbook 2514\\Lesson04DisplayingContent\\obj\\",
+      "projectPath": "C:\\School\\GMPR 2514\\gmpr-2514-jan-2026-workbook-a02-cnobert-presono\\Lesson04DisplayingContent\\Lesson04DisplayingContent.csproj",
+      "packagesPath": "C:\\Users\\presono\\.nuget\\packages\\",
+      "outputPath": "C:\\School\\GMPR 2514\\gmpr-2514-jan-2026-workbook-a02-cnobert-presono\\Lesson04DisplayingContent\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jhuri\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\presono\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
