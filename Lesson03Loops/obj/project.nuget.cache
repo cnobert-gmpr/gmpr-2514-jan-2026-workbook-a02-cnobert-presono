@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "80R6DvcCvZw=",
+  "success": true,
+  "projectFilePath": "C:\\School\\Win26\\GMPR 2514\\workbook 2514\\Lesson03Loops\\Lesson03Loops.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jhuri\\.nuget\\packages\\contentless\\4.0.0\\contentless.4.0.0.nupkg.sha512",
+    "C:\\Users\\jhuri\\.nuget\\packages\\cyotek.drawing.bitmapfont\\2.0.1\\cyotek.drawing.bitmapfont.2.0.1.nupkg.sha512",
+    "C:\\Users\\jhuri\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.4.1\\monogame.framework.desktopgl.3.8.4.1.nupkg.sha512",
+    "C:\\Users\\jhuri\\.nuget\\packages\\monogame.library.openal\\1.24.3.2\\monogame.library.openal.1.24.3.2.nupkg.sha512",
+    "C:\\Users\\jhuri\\.nuget\\packages\\monogame.library.sdl\\2.32.2.1\\monogame.library.sdl.2.32.2.1.nupkg.sha512",
+    "C:\\Users\\jhuri\\.nuget\\packages\\nvorbis\\0.10.4\\nvorbis.0.10.4.nupkg.sha512",
+    "C:\\Users\\jhuri\\.nuget\\packages\\spritefontplus\\0.9.2\\spritefontplus.0.9.2.nupkg.sha512",
+    "C:\\Users\\jhuri\\.nuget\\packages\\stbimagesharp\\2.22.4\\stbimagesharp.2.22.4.nupkg.sha512",
+    "C:\\Users\\jhuri\\.nuget\\packages\\stbtruetypesharp\\1.24.7\\stbtruetypesharp.1.24.7.nupkg.sha512",
+    "C:\\Users\\jhuri\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\jhuri\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
+    "C:\\Users\\jhuri\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.22\\microsoft.netcore.app.ref.8.0.22.nupkg.sha512",
+    "C:\\Users\\jhuri\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.22\\microsoft.windowsdesktop.app.ref.8.0.22.nupkg.sha512",
+    "C:\\Users\\jhuri\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.22\\microsoft.aspnetcore.app.ref.8.0.22.nupkg.sha512",
+    "C:\\Users\\jhuri\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.22\\microsoft.netcore.app.host.win-x64.8.0.22.nupkg.sha512"
+  ],
+  "logs": []
+}
