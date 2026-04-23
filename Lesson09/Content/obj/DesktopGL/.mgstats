@@ -1,0 +1,5 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/School/Win26/GMPR 2514/workbook 2514/Lesson09/Content/Idle.png","C:/School/Win26/GMPR 2514/workbook 2514/Lesson09/Content/bin/DesktopGL/Idle.xnb","TextureProcessor","Texture2DContent",2588,16405,0.0665387
+"C:/School/Win26/GMPR 2514/workbook 2514/Lesson09/Content/JumpOne.png","C:/School/Win26/GMPR 2514/workbook 2514/Lesson09/Content/bin/DesktopGL/JumpOne.xnb","TextureProcessor","Texture2DContent",17790,5605,0.0028123
+"C:/School/Win26/GMPR 2514/workbook 2514/Lesson09/Content/SystemArialFont.spritefont","C:/School/Win26/GMPR 2514/workbook 2514/Lesson09/Content/bin/DesktopGL/SystemArialFont.xnb","FontDescriptionProcessor","SpriteFontContent",2068,37913,0.04493
+"C:/School/Win26/GMPR 2514/workbook 2514/Lesson09/Content/Walk.png","C:/School/Win26/GMPR 2514/workbook 2514/Lesson09/Content/bin/DesktopGL/Walk.xnb","TextureProcessor","Texture2DContent",2315,55957,0.0056055

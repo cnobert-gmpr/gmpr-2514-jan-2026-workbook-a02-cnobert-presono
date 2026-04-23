@@ -1,0 +1,593 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "Contentless/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Cyotek.Drawing.BitmapFont/2.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/Cyotek.Drawing.BitmapFont.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Cyotek.Drawing.BitmapFont.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MonoGame.Framework.DesktopGL/3.8.4.1": {
+        "type": "package",
+        "dependencies": {
+          "MonoGame.Library.OpenAL": "1.24.3.2",
+          "MonoGame.Library.SDL": "2.32.2.1",
+          "NVorbis": "0.10.4"
+        },
+        "compile": {
+          "lib/net8.0/MonoGame.Framework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/MonoGame.Framework.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/MonoGame.Framework.DesktopGL.targets": {}
+        }
+      },
+      "MonoGame.Library.OpenAL/1.24.3.2": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/android-arm/native/libopenal.so": {
+            "assetType": "native",
+            "rid": "android-arm"
+          },
+          "runtimes/android-arm64/native/libopenal.so": {
+            "assetType": "native",
+            "rid": "android-arm64"
+          },
+          "runtimes/android-x64/native/libopenal.so": {
+            "assetType": "native",
+            "rid": "android-x64"
+          },
+          "runtimes/android-x86/native/libopenal.so": {
+            "assetType": "native",
+            "rid": "android-x86"
+          },
+          "runtimes/ios-arm64/native/libopenal.a": {
+            "assetType": "native",
+            "rid": "ios-arm64"
+          },
+          "runtimes/iossimulator-arm64/native/libopenal.a": {
+            "assetType": "native",
+            "rid": "iossimulator-arm64"
+          },
+          "runtimes/iossimulator-x64/native/libopenal.a": {
+            "assetType": "native",
+            "rid": "iossimulator-x64"
+          },
+          "runtimes/linux-arm64/native/libopenal.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-x64/native/libopenal.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx/native/libopenal.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          },
+          "runtimes/win-x64/native/openal.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      },
+      "MonoGame.Library.SDL/2.32.2.1": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libSDL2-2.0.so.0": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx/native/libSDL2-2.0.0.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          },
+          "runtimes/win-x64/native/SDL2.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      },
+      "NVorbis/0.10.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.3",
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/NVorbis.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/NVorbis.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "SpriteFontPlus/0.9.2": {
+        "type": "package",
+        "dependencies": {
+          "Cyotek.Drawing.BitmapFont": "2.0.1",
+          "StbImageSharp": "2.22.4",
+          "StbTrueTypeSharp": "1.24.7"
+        },
+        "compile": {
+          "lib/netstandard2.0/SpriteFontPlus.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SpriteFontPlus.dll": {}
+        }
+      },
+      "StbImageSharp/2.22.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/StbImageSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/StbImageSharp.dll": {}
+        }
+      },
+      "StbTrueTypeSharp/1.24.7": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/StbTrueTypeSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/StbTrueTypeSharp.dll": {}
+        }
+      },
+      "System.Memory/4.5.3": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Contentless/4.0.0": {
+      "sha512": "kmybgQ8xnfej1gE1YHLTSUk64CuI/Ec1eebNwZqyhtbHkpv9jqV4yy/ur/1tvKr0ODxtEnzEhY9Hn8V5BV3GwQ==",
+      "type": "package",
+      "path": "contentless/4.0.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Logo.png",
+        "README.md",
+        "build/Contentless.targets",
+        "contentless.4.0.0.nupkg.sha512",
+        "contentless.nuspec",
+        "lib/net8.0/_._",
+        "tools/ATI.TextureConverter.dll",
+        "tools/AssimpNet.dll",
+        "tools/Contentless.deps.json",
+        "tools/Contentless.dll",
+        "tools/Contentless.exe",
+        "tools/Contentless.pdb",
+        "tools/Contentless.runtimeconfig.json",
+        "tools/CppNet.dll",
+        "tools/Microsoft.Build.Framework.dll",
+        "tools/Microsoft.Build.dll",
+        "tools/Microsoft.NET.StringTools.dll",
+        "tools/Microsoft.Win32.SystemEvents.dll",
+        "tools/MonoGame.Framework.Content.Pipeline.dll",
+        "tools/MonoGame.Framework.dll",
+        "tools/Newtonsoft.Json.dll",
+        "tools/NuGet.Common.dll",
+        "tools/NuGet.Configuration.dll",
+        "tools/NuGet.Frameworks.dll",
+        "tools/Nvidia.TextureTools.dll",
+        "tools/PVRTexLibNET.dll",
+        "tools/SharpDX.D3DCompiler.dll",
+        "tools/SharpDX.dll",
+        "tools/SharpFont.dll",
+        "tools/System.Configuration.ConfigurationManager.dll",
+        "tools/System.Drawing.Common.dll",
+        "tools/System.Reflection.MetadataLoadContext.dll",
+        "tools/System.Security.Cryptography.ProtectedData.dll",
+        "tools/System.Security.Permissions.dll",
+        "tools/System.Windows.Extensions.dll",
+        "tools/runtimes/linux-x64/native/libFreeImage.so",
+        "tools/runtimes/linux-x64/native/libPVRTexLibWrapper.so",
+        "tools/runtimes/linux-x64/native/libSDL2-2.0.so.0",
+        "tools/runtimes/linux-x64/native/libassimp.so",
+        "tools/runtimes/linux-x64/native/libfreetype6.so",
+        "tools/runtimes/linux-x64/native/libnvcore.so",
+        "tools/runtimes/linux-x64/native/libnvimage.so",
+        "tools/runtimes/linux-x64/native/libnvmath.so",
+        "tools/runtimes/linux-x64/native/libnvtt.so",
+        "tools/runtimes/linux-x64/native/libopenal.so.1",
+        "tools/runtimes/linux-x64/native/libpng16.so.16",
+        "tools/runtimes/linux-x64/native/linux/ffmpeg",
+        "tools/runtimes/linux-x64/native/linux/ffprobe",
+        "tools/runtimes/osx-x64/native/libassimp.dylib",
+        "tools/runtimes/osx/native/libFreeImage.dylib",
+        "tools/runtimes/osx/native/libPVRTexLibWrapper.dylib",
+        "tools/runtimes/osx/native/libSDL2.dylib",
+        "tools/runtimes/osx/native/libfreetype6.dylib",
+        "tools/runtimes/osx/native/libnvcore.dylib",
+        "tools/runtimes/osx/native/libnvimage.dylib",
+        "tools/runtimes/osx/native/libnvmath.dylib",
+        "tools/runtimes/osx/native/libnvtt.dylib",
+        "tools/runtimes/osx/native/libopenal.1.dylib",
+        "tools/runtimes/osx/native/libpng16.16.dylib",
+        "tools/runtimes/osx/native/osx/ffmpeg",
+        "tools/runtimes/osx/native/osx/ffprobe",
+        "tools/runtimes/unix/lib/net6.0/System.Drawing.Common.dll",
+        "tools/runtimes/win-x64/native/FreeImage.dll",
+        "tools/runtimes/win-x64/native/PVRTexLibWrapper.dll",
+        "tools/runtimes/win-x64/native/SDL2.dll",
+        "tools/runtimes/win-x64/native/assimp.dll",
+        "tools/runtimes/win-x64/native/ffmpeg.exe",
+        "tools/runtimes/win-x64/native/ffprobe.exe",
+        "tools/runtimes/win-x64/native/freetype6.dll",
+        "tools/runtimes/win-x64/native/libmojoshader_64.dll",
+        "tools/runtimes/win-x64/native/nvtt.dll",
+        "tools/runtimes/win-x64/native/soft_oal.dll",
+        "tools/runtimes/win-x86/native/SDL2.dll",
+        "tools/runtimes/win-x86/native/assimp.dll",
+        "tools/runtimes/win-x86/native/soft_oal.dll",
+        "tools/runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll",
+        "tools/runtimes/win/lib/net6.0/System.Drawing.Common.dll",
+        "tools/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll",
+        "tools/runtimes/win/lib/net6.0/System.Windows.Extensions.dll"
+      ]
+    },
+    "Cyotek.Drawing.BitmapFont/2.0.1": {
+      "sha512": "8C8Vdvf8p6RIOBNFE99ZNPWFxwV/ZT1wk11cajuL3+6/e5DBGPHe+ZjxLu2efTWQ1YvfLh4KpP2epUZ9z/WcFQ==",
+      "type": "package",
+      "path": "cyotek.drawing.bitmapfont/2.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "cyotek.drawing.bitmapfont.2.0.1.nupkg.sha512",
+        "cyotek.drawing.bitmapfont.nuspec",
+        "icon.png",
+        "lib/net35/Cyotek.Drawing.BitmapFont.dll",
+        "lib/net35/Cyotek.Drawing.BitmapFont.xml",
+        "lib/net40/Cyotek.Drawing.BitmapFont.dll",
+        "lib/net40/Cyotek.Drawing.BitmapFont.xml",
+        "lib/net452/Cyotek.Drawing.BitmapFont.dll",
+        "lib/net452/Cyotek.Drawing.BitmapFont.xml",
+        "lib/net462/Cyotek.Drawing.BitmapFont.dll",
+        "lib/net462/Cyotek.Drawing.BitmapFont.xml",
+        "lib/net472/Cyotek.Drawing.BitmapFont.dll",
+        "lib/net472/Cyotek.Drawing.BitmapFont.xml",
+        "lib/net48/Cyotek.Drawing.BitmapFont.dll",
+        "lib/net48/Cyotek.Drawing.BitmapFont.xml",
+        "lib/netcoreapp2.1/Cyotek.Drawing.BitmapFont.dll",
+        "lib/netcoreapp2.1/Cyotek.Drawing.BitmapFont.xml",
+        "lib/netcoreapp2.2/Cyotek.Drawing.BitmapFont.dll",
+        "lib/netcoreapp2.2/Cyotek.Drawing.BitmapFont.xml",
+        "lib/netcoreapp3.1/Cyotek.Drawing.BitmapFont.dll",
+        "lib/netcoreapp3.1/Cyotek.Drawing.BitmapFont.xml",
+        "lib/netstandard1.3/Cyotek.Drawing.BitmapFont.dll",
+        "lib/netstandard1.3/Cyotek.Drawing.BitmapFont.xml",
+        "lib/netstandard2.0/Cyotek.Drawing.BitmapFont.dll",
+        "lib/netstandard2.0/Cyotek.Drawing.BitmapFont.xml",
+        "lib/netstandard2.1/Cyotek.Drawing.BitmapFont.dll",
+        "lib/netstandard2.1/Cyotek.Drawing.BitmapFont.xml"
+      ]
+    },
+    "MonoGame.Framework.DesktopGL/3.8.4.1": {
+      "sha512": "YybxIIT5+Ky78E/XdkS0glyluMr2EeDZwx2LqXULAOCqiKt1+aDrjPZaqLL5qpNgBcMEHUeZJ4YjWe4TAZlWLw==",
+      "type": "package",
+      "path": "monogame.framework.desktopgl/3.8.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "README-packages.md",
+        "build/MonoGame.Framework.DesktopGL.targets",
+        "lib/net8.0/MonoGame.Framework.dll",
+        "lib/net8.0/MonoGame.Framework.xml",
+        "monogame.framework.desktopgl.3.8.4.1.nupkg.sha512",
+        "monogame.framework.desktopgl.nuspec"
+      ]
+    },
+    "MonoGame.Library.OpenAL/1.24.3.2": {
+      "sha512": "nGRsXQXs+NSUC3C5w90hFQfyKdZPpBnHnyg2w+Dw/2pUH7s+CoRWTJNYbzzdJf3+aeUvfvG4rTbFvMKDDj5olA==",
+      "type": "package",
+      "path": "monogame.library.openal/1.24.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE",
+        "README.md",
+        "monogame.library.openal.1.24.3.2.nupkg.sha512",
+        "monogame.library.openal.nuspec",
+        "runtimes/android-arm/native/libopenal.so",
+        "runtimes/android-arm64/native/libopenal.so",
+        "runtimes/android-x64/native/libopenal.so",
+        "runtimes/android-x86/native/libopenal.so",
+        "runtimes/ios-arm64/native/libopenal.a",
+        "runtimes/iossimulator-arm64/native/libopenal.a",
+        "runtimes/iossimulator-x64/native/libopenal.a",
+        "runtimes/linux-arm64/native/libopenal.so",
+        "runtimes/linux-x64/native/libopenal.so",
+        "runtimes/osx/native/libopenal.dylib",
+        "runtimes/win-x64/native/openal.dll"
+      ]
+    },
+    "MonoGame.Library.SDL/2.32.2.1": {
+      "sha512": "T4E2ppGlSTC2L9US1rxtdg3qTbarRzNId31xZoumUW9cf9Nq8nRQPMu9GzvZGrhfSySf0+UWPEj1rlicps+P/w==",
+      "type": "package",
+      "path": "monogame.library.sdl/2.32.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.txt",
+        "README.md",
+        "monogame.library.sdl.2.32.2.1.nupkg.sha512",
+        "monogame.library.sdl.nuspec",
+        "runtimes/linux-x64/native/libSDL2-2.0.so.0",
+        "runtimes/osx/native/libSDL2-2.0.0.dylib",
+        "runtimes/win-x64/native/SDL2.dll"
+      ]
+    },
+    "NVorbis/0.10.4": {
+      "sha512": "WYnil3DhQHzjCY0dM9I2B3r1vWip90AOuQd25KE4NrjPQBg0tBJFluRLm5YPnO5ZLDmwrfosY8jCQGQRmWI/Pg==",
+      "type": "package",
+      "path": "nvorbis/0.10.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net45/NVorbis.dll",
+        "lib/net45/NVorbis.xml",
+        "lib/netstandard2.0/NVorbis.dll",
+        "lib/netstandard2.0/NVorbis.xml",
+        "nvorbis.0.10.4.nupkg.sha512",
+        "nvorbis.nuspec"
+      ]
+    },
+    "SpriteFontPlus/0.9.2": {
+      "sha512": "k47yAu14Pd5tMP4Cs/c8HfBnjze0pqqoANwkyqlBT2EOJb2kVZUOeld9Gwus4v5kUDjPnxMoTnqD3tsHLPh/dA==",
+      "type": "package",
+      "path": "spritefontplus/0.9.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/SpriteFontPlus.dll",
+        "lib/netstandard2.0/SpriteFontPlus.dll",
+        "spritefontplus.0.9.2.nupkg.sha512",
+        "spritefontplus.nuspec"
+      ]
+    },
+    "StbImageSharp/2.22.4": {
+      "sha512": "0dOXIj3OM8oGxtfqZHZdLJRnV7FjP4VToeCprpyVXbWpct6DplgWq6YKVFA5hAYVs8hzvGekA97Qg8C3exeVYg==",
+      "type": "package",
+      "path": "stbimagesharp/2.22.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/StbImageSharp.dll",
+        "lib/netstandard2.0/StbImageSharp.dll",
+        "stbimagesharp.2.22.4.nupkg.sha512",
+        "stbimagesharp.nuspec"
+      ]
+    },
+    "StbTrueTypeSharp/1.24.7": {
+      "sha512": "4hmKw+Fq22Fs8GI8o1U7SUGw7iNTYVNc476o/rxmDVgIsQgQX0nNvlG1hUEhvC0ouNmoJq32yclQko+n67bc7A==",
+      "type": "package",
+      "path": "stbtruetypesharp/1.24.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/StbTrueTypeSharp.dll",
+        "lib/netstandard2.0/StbTrueTypeSharp.dll",
+        "stbtruetypesharp.1.24.7.nupkg.sha512",
+        "stbtruetypesharp.nuspec"
+      ]
+    },
+    "System.Memory/4.5.3": {
+      "sha512": "3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
+      "type": "package",
+      "path": "system.memory/4.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.3.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.ValueTuple/4.5.0": {
+      "sha512": "okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
+      "type": "package",
+      "path": "system.valuetuple/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.ValueTuple.dll",
+        "lib/net461/System.ValueTuple.xml",
+        "lib/net47/System.ValueTuple.dll",
+        "lib/net47/System.ValueTuple.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.ValueTuple.dll",
+        "lib/netstandard1.0/System.ValueTuple.xml",
+        "lib/netstandard2.0/_._",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.ValueTuple.dll",
+        "ref/net47/System.ValueTuple.dll",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard2.0/_._",
+        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.valuetuple.4.5.0.nupkg.sha512",
+        "system.valuetuple.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Contentless >= 4.0.0",
+      "MonoGame.Framework.DesktopGL >= 3.8.*",
+      "SpriteFontPlus >= 0.9.2"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\presono\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\School\\GMPR 2514\\gmpr-2514-jan-2026-workbook-a02-cnobert-presono\\Lesson07Pong\\Lesson07Pong.csproj",
+      "projectName": "Lesson07Pong",
+      "projectPath": "C:\\School\\GMPR 2514\\gmpr-2514-jan-2026-workbook-a02-cnobert-presono\\Lesson07Pong\\Lesson07Pong.csproj",
+      "packagesPath": "C:\\Users\\presono\\.nuget\\packages\\",
+      "outputPath": "C:\\School\\GMPR 2514\\gmpr-2514-jan-2026-workbook-a02-cnobert-presono\\Lesson07Pong\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\presono\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "10.0.100"
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "dependencies": {
+          "Contentless": {
+            "include": "Runtime, Compile, Native, ContentFiles, Analyzers",
+            "target": "Package",
+            "version": "[4.0.0, )"
+          },
+          "MonoGame.Framework.DesktopGL": {
+            "target": "Package",
+            "version": "[3.8.*, )"
+          },
+          "SpriteFontPlus": {
+            "target": "Package",
+            "version": "[0.9.2, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.22, 8.0.22]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[8.0.22, 8.0.22]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.22, 8.0.22]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.22, 8.0.22]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

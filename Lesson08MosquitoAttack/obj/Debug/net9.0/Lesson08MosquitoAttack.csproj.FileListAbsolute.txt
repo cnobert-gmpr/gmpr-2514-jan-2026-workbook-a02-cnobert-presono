@@ -1,0 +1,7 @@
+C:\School\Win26\GMPR 2514\workbook 2514\Lesson08MosquitoAttack\obj\Debug\net9.0\mgcb.tool.restore
+C:\School\Win26\GMPR 2514\workbook 2514\Lesson08MosquitoAttack\obj\Debug\net9.0\Lesson08MosquitoAttack.csproj.AssemblyReference.cache
+C:\School\Win26\GMPR 2514\workbook 2514\Lesson08MosquitoAttack\obj\Debug\net9.0\Lesson08MosquitoAttack.GeneratedMSBuildEditorConfig.editorconfig
+C:\School\Win26\GMPR 2514\workbook 2514\Lesson08MosquitoAttack\obj\Debug\net9.0\Lesson08MosquitoAttack.AssemblyInfoInputs.cache
+C:\School\Win26\GMPR 2514\workbook 2514\Lesson08MosquitoAttack\obj\Debug\net9.0\Lesson08MosquitoAttack.AssemblyInfo.cs
+C:\School\Win26\GMPR 2514\workbook 2514\Lesson08MosquitoAttack\obj\Debug\net9.0\Lesson08MosquitoAttack.csproj.CoreCompileInputs.cache
+C:\School\Win26\GMPR 2514\workbook 2514\Lesson08MosquitoAttack\obj\Debug\net9.0\Lesson08MosquitoAttack.sourcelink.json
