@@ -89,4 +89,8 @@ public class SimpleAnimation
     {
         spriteBatch.Draw(_texture, position, _frames[_frameIndex], Color.White, 0f, Vector2.Zero, 1f, effects, 0f);
     }
+    internal void Reset()
+    {
+        _frameIndex = 0;
+    }
 }

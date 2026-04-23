@@ -1,5 +1,7 @@
+using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace Lesson09;
 
@@ -23,8 +25,7 @@ public class Player
     private SimpleAnimation _animationIdle, _animationJump, _animationWalk, _animationCurrent;
 
     private Vector2 _position, _velocity, _dimensions;
-
-    private Rectangle _gameBoundingBox;
+    private GraphicsDeviceManager _graphics;
 
     internal Vector2 Velocity { get => _velocity; }
 
@@ -43,30 +44,23 @@ public class Player
     internal void Initialize()
     {
         _state = State.Idle;
-        _graphics.PreferredBackBufferWidth = WindowWidth;
-        _graphics.PreferredBackBufferHeight = WindowHeight;
-        _graphics.ApplyChanges();
-
         _player = new Player(new Vector2(50, 50), _gameBoundingBox);
-        base.initialize();
+        
     }
     internal void LoadContent(ContentManager content)
     {
-        // Idle: cells 30 px wide, 1/8 s per frame => 8 fps
         Texture2D idleTexture = content.Load<Texture2D>("Idle");
         int idleFrameWidth = 30;
         int idleFrameHeight = idleTexture.Height;
         int idleFrameCount = idleTexture.Width / idleFrameWidth;
         _animationIdle = new SimpleAnimation(idleTexture, idleFrameWidth, idleFrameHeight, idleFrameCount, 8f);
 
-        // Walk: cells 35 px wide, 1/8 s per frame => 8 fps
         Texture2D walkTexture = content.Load<Texture2D>("Walk");
         int walkFrameWidth = 35;
         int walkFrameHeight = walkTexture.Height;
         int walkFrameCount = walkTexture.Width / walkFrameWidth;
         _animationWalk = new SimpleAnimation(walkTexture, walkFrameWidth, walkFrameHeight, walkFrameCount, 8f);
 
-        // Jump: cells 30 px wide, 1/8 s per frame => 8 fps
         Texture2D jumpTexture = content.Load<Texture2D>("JumpOne");
         int jumpFrameWidth = 30;
         int jumpFrameHeight = jumpTexture.Height;
@@ -83,7 +77,7 @@ public class Player
 
         _animationCurrent?.Update(gameTime);
 
-        _velocity.Y += PlatformerGame._Gravity * dt;
+        _velocity.Y += Platformer._Gravity * dt;
 
         _position += _velocity * dt;
          
@@ -111,14 +105,10 @@ public class Player
         switch(_state)
         {
             case State.Jumping:
-                _animationCurrent = _animationJump;
-                break;
-            case State.Walking:
+            case State.Walking:            
+            case State.Idle:
                 SpriteEffects effect = _facingRight ? SpriteEffects.None : SpriteEffects.FlipHorizontally; 
                 _animationCurrent?.Draw(spriteBatch, _position, effect);
-                break;
-            case State.Idle:
-                _animationCurrent = _animationIdle;
                 break;
         }
     }
@@ -170,28 +160,22 @@ public class Player
         }
     }
 
-    internal void Land()
+    internal void Land(Rectangle whatIlandedOn)
     {
         if (_state == State.Jumping)
         {
             _position.Y = whatIlandedOn.Top - _dimensions.Y + 1;
             _velocity.Y = 0;
-            _state = State.Walking;
+            _state = State.Idle;
+            _animationCurrent = _animationIdle;
+            _animationCurrent.Reset();
         }
     }
 
     internal void StandOn(Rectangle whatiAmStandingOn, float dt)
     {
-        _velocity.Y -= PlatformerGame.Gravity * dt;
+        _velocity.Y -= Platformer._Gravity * dt;
         _position.Y = whatiAmStandingOn.Top - _dimensions.Y + 1;
 
-    }
-
-    internal void Jump()
-    {
-        if (_state != State.Jumping)
-        {
-            _velocity.Y = _JumpVelocity;
-        }
     }
 }

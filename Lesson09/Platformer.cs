@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -12,19 +13,11 @@ public class Platformer : Game
 
     private GraphicsDeviceManager _graphics;
     private SpriteBatch _spriteBatch;
-
     private Rectangle _gameBoundingBox = new Rectangle(0, 0, _WindowWidth, _WindowHeight);
-
-    public Platformer()
-    {
-        _graphics = new GraphicsDeviceManager(this);
-        Content.RootDirectory = "Content";
-        IsMouseVisible = true;
-    }
 
     private Player _player;
     private Collider _ground;
-    private Collider[] _platform01;
+    private List<Platform> _platforms;
     public Platformer()
     {
         _graphics = new GraphicsDeviceManager(this);
@@ -40,13 +33,13 @@ public class Platformer : Game
         _player = new Player(new Vector2(50, 50), _gameBoundingBox);
 
         _player.Initialize();
-        _ground = new Collider(new Vector2(0, 300), new Vector2(_WindowWidth, 1), ColliderType.Top);
+        _ground = new Collider(new Vector2(0, 300), new Vector2(_WindowWidth, 1), Collider.ColliderType.Top);
 
-        _platform01 = new Collider[4];
-        _platform01[0] = new Collider(new Vector2(160, 230), new Vector2(80, 1), ColliderType.Top);
-        _platform01[1] = new Collider(new Vector2(250, 230), new Vector2(1, 20), ColliderType.Right);
-        _platform01[2] = new Collider(new Vector2(160, 250), new Vector2(80, 1), ColliderType.Bottom);
-        _platform01[3] = new Collider(new Vector2(150, 230), new Vector2(1, 20), ColliderType.Left);
+        _platforms = new List<Platform>();
+        _platforms.Add(new Platform(new Vector2(100, 250), new Vector2(100, 10)));
+        _platforms.Add(new Platform(new Vector2(250, 200), new Vector2(100, 10)));
+        _platforms.Add(new Platform(new Vector2(400, 150), new Vector2(100, 10)));
+        _platforms.Add(new Platform(new Vector2(100, 250), new Vector2(100, 10)));
         base.Initialize();
     }
 
@@ -55,9 +48,9 @@ public class Platformer : Game
         _spriteBatch = new SpriteBatch(GraphicsDevice);
         _player.LoadContent(Content);
         _ground.LoadContent(GraphicsDevice);
-        foreach (Collider collider in _platform01)
+        foreach (Platform p in _platforms)
         {
-            collider.LoadContent(GraphicsDevice);
+            p.LoadContent(GraphicsDevice);
         }
     }
 
@@ -78,9 +71,9 @@ public class Platformer : Game
         #endregion
         _ground.ProcessCollision(_player, gameTime);
 
-        foreach (Collider collider in _platform01)
+        foreach (Platform p in _platforms)
         {
-            c.ProcessCollision(_player, gameTime);
+            p.ProcessCollisions(_player, gameTime);
         }
         _player.Update(gameTime);
         base.Update(gameTime);
@@ -92,9 +85,9 @@ public class Platformer : Game
         _spriteBatch.Begin();
         _player.Draw(_spriteBatch);
         _ground.Draw(_spriteBatch);
-        foreach (Collider collider in _platform01)
+        foreach (Platform p in _platforms)
         {
-            c.Draw(_spriteBatch);
+            p.Draw(_spriteBatch);
         }
         _spriteBatch.End();
         base.Draw(gameTime);

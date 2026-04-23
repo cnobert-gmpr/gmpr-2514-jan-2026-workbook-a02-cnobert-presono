@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\School\\GMPR 2514\\gmpr-2514-jan-2026-workbook-a02-cnobert-presono\\Lesson09\\Platformer.csproj": {}
+    "C:\\School\\Win26\\GMPR 2514\\workbook 2514\\Lesson09\\Platformer.csproj": {}
   },
   "projects": {
-    "C:\\School\\GMPR 2514\\gmpr-2514-jan-2026-workbook-a02-cnobert-presono\\Lesson09\\Platformer.csproj": {
+    "C:\\School\\Win26\\GMPR 2514\\workbook 2514\\Lesson09\\Platformer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\School\\GMPR 2514\\gmpr-2514-jan-2026-workbook-a02-cnobert-presono\\Lesson09\\Platformer.csproj",
+        "projectUniqueName": "C:\\School\\Win26\\GMPR 2514\\workbook 2514\\Lesson09\\Platformer.csproj",
         "projectName": "Platformer",
-        "projectPath": "C:\\School\\GMPR 2514\\gmpr-2514-jan-2026-workbook-a02-cnobert-presono\\Lesson09\\Platformer.csproj",
-        "packagesPath": "C:\\Users\\presono\\.nuget\\packages\\",
-        "outputPath": "C:\\School\\GMPR 2514\\gmpr-2514-jan-2026-workbook-a02-cnobert-presono\\Lesson09\\obj\\",
+        "projectPath": "C:\\School\\Win26\\GMPR 2514\\workbook 2514\\Lesson09\\Platformer.csproj",
+        "packagesPath": "C:\\Users\\jhuri\\.nuget\\packages\\",
+        "outputPath": "C:\\School\\Win26\\GMPR 2514\\workbook 2514\\Lesson09\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\presono\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\jhuri\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -64,24 +64,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[9.0.11, 9.0.11]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[9.0.11, 9.0.11]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[9.0.11, 9.0.11]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[9.0.11, 9.0.11]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
